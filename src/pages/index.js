@@ -2,7 +2,7 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import profilePic from "../../public/images/profile/developer-pic-1.png"
+import profilePic from "../../public/images/profile/developer-pic-2.png"
 import AnimatedText from '@/components/AnimatedText'
 import { LinkArrow } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
@@ -30,7 +30,7 @@ export default function Home() {
 
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
 
-              <AnimatedText text="Turning Vision Into Reality With Code And Design." className='!text-6xl !text-left
+              <AnimatedText text="Weaving your imagination into practical solutions." className='!text-6xl !text-left
               xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
                 As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
