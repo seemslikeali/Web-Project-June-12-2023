@@ -47,7 +47,7 @@ const Education = () => {
 
                         type="Bachelor Of Science In Computer Science"
                         time="2018-present"
-                        place="Massachusetts Institute Of Technology (MIT)"
+                        place="University of Saskatchewans"
                         info="Relevant courses such as Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence were part of our academic curriculum. These courses provided us with a solid foundation in key concepts and techniques essential for navigating the intricate world of web development."
                     />
 
