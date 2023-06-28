@@ -38,27 +38,30 @@ const Education = () => {
                 Education
             </h2>
 
-            <div ref={ref} className='w-[75] mx-auto relative lg:w-[90%] md:w-full'>
-            <motion.div 
-            style={{scaleY: scrollYProgress}}
-            className='absolute left-9 top0 w-[4px] h-full bg-dark dark:bg-light origin-top
-            md:w-[2px] md:left-[30px] xs:left-[20px]'/>
-            <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2 '>
-                <Details 
-                type='Bachelor Of Science In Computer Science' 
-                time='2018-Present'
-                place='University of Saskatchewan'
-                info='Relevant courses included Data Structures and Algorithms, Web application dev, Software Testing and 
-                Intermediate software engineering.'
-                />
-                <Details 
-                type='Bilingual High School Diploma' 
-                time='2015'
-                place='École canadienne-française PGD Saskatoon'
-                info={'Gruadeted High School with a full set of credits in both english and French language classes . \&nbsp'  } 
-                />
-            </ul>
-        </div>
+            <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
+                <motion.div
+                    style={{ scaleY: scrollYProgress }}
+                    className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]' />
+                <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
+                    <Details
+
+                        type="Bachelor Of Science In Computer Science"
+                        time="2018-present"
+                        place="Massachusetts Institute Of Technology (MIT)"
+                        info="Relevant courses such as Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence were part of our academic curriculum. These courses provided us with a solid foundation in key concepts and techniques essential for navigating the intricate world of web development."
+                    />
+
+
+
+                    <Details
+
+                        type="Bilingual High School Diploma"
+                        time="2015"
+                        place="École canadienne-française PGD Saskatoon"
+                        info="We successfully graduated from high school with a full set of credits in both English and French language classes. This achievement not only reflects our proficiency in two languages but also demonstrates our ability to effectively navigate and excel in diverse web development environments. It showcases our adaptability and readiness to tackle the challenges of the dynamic and ever-evolving scene."
+                    />
+                </ul>
+            </div>
         </div>
     )
 }

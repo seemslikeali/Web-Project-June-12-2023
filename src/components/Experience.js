@@ -60,7 +60,7 @@ const Experience = () => {
                         company="Shakeel's Restaurant"
                         time="2019"
                         address="3110 8 St E #7, Saskatoon, SK S7H 0W2"
-                        work="Designed and developped their website from the ground up but they closed their doors."
+                        work="Designing and developing their website from scratch, unfortunately, the company faced unforeseen challenges and eventually had to close its doors."
                     />
 
                     <Details
@@ -98,8 +98,6 @@ const Experience = () => {
                 </ul>
 
             </div>
-
-
 
         </div>
     )
