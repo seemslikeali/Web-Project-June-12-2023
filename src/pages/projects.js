@@ -8,15 +8,27 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 import project1 from "../../public/images/projects/ProjectImage1.jpg"
+import ImgSlider from '@/components/imgSlider'
+import { useState } from 'react'
+import F1 from '../../public/images/projects/F1.png'
+import K1 from '../../public/images/projects/K1.png'
+import V1 from '../../public/images/projects/V1.png'
+import R1 from '../../public/images/projects/R1.png'
+
+
+
+
 const FramerImage = motion(Image);
 
-const FeatureProject = ({ type, title, summary, img, link, github }) => {
+const FeatureProject = ({ type, title, summary, img, link, srcset}) => {
+    const [trigger, setTrigger] = useState(false)
+
     return (
         <article className='rounded-br-2xl w-full flex items-center justify-between rounded-3xl border border-solid
          border-dark bg-light dark:border-light dark:bg-dark shadow-2x1 p-12 relative
          lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
             <div className='xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem] rounded-br-3xl absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light' />
-            <Link href={link} target='_blank'
+            <button onClick={() => setTrigger(true)}
                 className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'
             >
                 <FramerImage src={img} alt={title} className="w-full h-auto"
@@ -26,7 +38,9 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
 
                 />
-            </Link>
+            </button>
+            <ImgSlider trigger={trigger} setTrigger={setTrigger} srcset = {srcset}/>
+
 
             <div className='w-1/2 flex flex-col items-start justify-between pl-6 dark:text-light lg:w-full lg:pl-0 lg:pt-6'>
                 <span className='text-primary dark:text-primaryDark font-medium text-xl xs:text-base'>{type}</span>
@@ -36,7 +50,6 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
 
                 <p className='sm:text-sm my-2 font-medium text-dark dark:text-light'>{summary}</p>
                 <div className='mt-2 flex items-center'>
-                    <Link className='w-10' href={github} target='_blank'><GithubIcon /> </Link>
                     <Link
                         className='sm:px-4 sm:text-base ml-4 rounded-lg bg-dark text-light dark:bg-light dark:text-dark p-2 px-6 text-lg font-semibold'
                         href={link} target='_blank'>Visit Project</Link>
@@ -52,13 +65,15 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
 }
 
 
-const Project = ({ title, type, img, link, github }) => {
+const Project = ({ title, type, img, link, srcset}) => {
+    const [trigger, setTrigger] = useState(false)
+
     return (
 
         <article className='w-full flex flex-col items-center justify-between rounded-2xl border border-solid border-dark bg-light p-6 relative
         dark:bg-dark dark:border-light xs:p-4'>
             <div className='md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem] rounded-br-3xl absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light' />
-            <Link href={link} target='_blank'
+            <button onClick={() => setTrigger(true)}
                 className='w-full cursor-pointer overflow-hidden rounded-lg'
             >
                 <FramerImage src={img} alt={title} className="w-full h-auto"
@@ -67,7 +82,9 @@ const Project = ({ title, type, img, link, github }) => {
                     priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />
-            </Link>
+            </button>
+            <ImgSlider trigger={trigger} setTrigger={setTrigger} srcset = {srcset}/>
+
 
             <div className='w-full flex flex-col items-start justify-between mt-4'>
                 <span className='text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base'>{type}</span>
@@ -84,9 +101,6 @@ const Project = ({ title, type, img, link, github }) => {
                         target='_blank'>
                         Visit
                     </Link>
-                    <Link className='w-8 md:w-6' href={github} target='_blank'>
-                        <GithubIcon />
-                    </Link>
                 </div>
             </div>
 
@@ -96,6 +110,42 @@ const Project = ({ title, type, img, link, github }) => {
 
 
 const projects = () => {
+
+        // Set of images for project 1
+        const set4 = [
+            { src: "/images/projects/F1.png", width: 2048, height: 1365 },
+            { src: "/images/projects/F2.png", width: 2048, height: 1365 },
+            { src: "/images/projects/F3.png", width: 2048, height: 1365 },
+            { src: "/images/projects/F4.png", width: 2048, height: 1365 },
+            { src: "/images/projects/F5.png", width: 2048, height: 1365 }
+        ]
+    
+        // Set of images for project 2
+        const set3 = [
+            { src: "/images/projects/K1.png", width: 2048, height: 1365 },
+            { src: "/images/projects/K2.png", width: 2048, height: 1365 },
+            { src: "/images/projects/K3.png", width: 2048, height: 1365 },
+            { src: "/images/projects/K4.png", width: 2048, height: 1365 },
+            { src: "/images/projects/K5.png", width: 2048, height: 1365 }
+        ]
+    
+        // Set of images for project 3
+        const set2 = [
+            { src: "/images/projects/V1.png", width: 2048, height: 1365 },
+            { src: "/images/projects/V2.png", width: 2048, height: 1365 },
+            { src: "/images/projects/V3.png", width: 2048, height: 1365 },
+            { src: "/images/projects/V4.png", width: 2048, height: 1365 },
+        ]
+
+        const set1 = [
+            { src: "/images/projects/R1.png", width: 2048, height: 1365 },
+            { src: "/images/projects/R2.png", width: 2048, height: 1365 },
+            { src: "/images/projects/R3.png", width: 2048, height: 1365 },
+            { src: "/images/projects/R4.png", width: 2048, height: 1365 },
+            { src: "/images/projects/R5.png", width: 2048, height: 1365 },
+            { src: "/images/projects/R5.png", width: 2048, height: 1365 }
+        ]
+    
     return (
         <>
             <Head>
@@ -112,55 +162,39 @@ const projects = () => {
                     <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                         <div className='col-span-12'>
                             <FeatureProject
-                                title={"Project Title"}
-                                summary={"Featured Project Summary"}
-                                img={project1}
-                                github={"/"}
-                                link="/"
+                                title={"Réseau Santé en français de la Saskatchewan"}
+                                summary={""}
+                                img={R1}
+                                link="https://rsfs.ca/"
+                                srcset={set1}
                                 type={"Featured Project"}
                             />
-                        </div>
-
-                        <div className='col-span-6 sm:col-span-12'>
-                            <Project title={"Project Title"}
-                                img={project1}
-                                github={"/"}
-                                link="/"
-                                type={"Featured Project"} />
-                        </div>
-
-                        <div className='col-span-6 sm:col-span-12'>
-                            <Project title={"Project Title"}
-                                img={project1}
-                                github={"/"}
-                                link="/"
-                                type={"Featured Project"} />
                         </div>
 
                         <div className='col-span-12'>
                             <FeatureProject
-                                title={"Project Title"}
-                                summary={"Featured Project Summary"}
-                                img={project1}
-                                github={"/"}
-                                link="/"
+                                title={"vitalite55 SK"}
+                                summary={""}
+                                img={V1}
+                                link="https://en.vitalite55sk.ca/"
+                                srcset={set2}
                                 type={"Featured Project"}
                             />
                         </div>
 
                         <div className='col-span-6 sm:col-span-12'>
-                            <Project title={"Project Title"}
-                                img={project1}
-                                github={"/"}
-                                link="/"
+                            <Project title={"Kabab King"}
+                                img={K1}
+                                link="https://www.kababking.ca/"
+                                srcset={set3}
                                 type={"Featured Project"} />
                         </div>
 
                         <div className='col-span-6 sm:col-span-12'>
-                            <Project title={"Project Title"}
-                                img={project1}
-                                github={"/"}
-                                link="/"
+                            <Project title={"Federation Des Francophones De Saskatoon"}
+                                img={F1}
+                                link="https://www.francosaskatoon.ca"
+                                srcset={set4}
                                 type={"Featured Project"} />
                         </div>
                     </div>
