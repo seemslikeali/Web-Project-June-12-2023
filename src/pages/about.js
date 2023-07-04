@@ -43,18 +43,18 @@ const PersonCard = ({ img, name, about }) => {
 
         <div class="w-full col-span-1 relative    bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700">
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl' />
-            <div class="grid grid-cols-3 pb-1">
+            <div className="grid grid-cols-3 pb-1 xl:grid-cols-2 xl:justify-center">
                 <div className='col-span-1  flex items-center justify-center pb-2'>
                     <div className="w-40 h-40 rounded-full shadow-lg">
-                        <Image class=" w-full h-full  rounded-full shadow-lg" src={img} alt='profilepic' />
+                        <Image class=" w-full h-full  rounded-full shadow-lg xl:justify-center " src={img} alt='profilepic' />
                     </div>
                 </div>
                 <div className='col-span-2 relative  h-full w-full rounded-2xl '>
                     <div className='pt-4'>
                         <span class="text-sm text-gray-500 dark:text-gray-400">Co-Founder/Developer</span>
                     </div>
-                    <h5 class="py-6 text-xl font-medium text-gray-900 dark:text-white">{name}</h5>
-                    <p>{about}</p>
+                    <h5 className="py-6 text-xl font-medium text-gray-900 dark:text-white">{name}</h5>
+                    <p className=''> {about}</p>
                     <div className='flex items-center py-6'>
                         <motion.a href="https://Github.com" target={"_blank"}
                             whileHover={{ y: -2 }}
@@ -92,7 +92,7 @@ const About = () => {
                 <Layout className='pt-16'>
                     <AnimatedText className="mb-44 lg:!text-2xl sm:!text-6xl xs:!text-4xl sm:mb-8" text="Passion Fuels Purpose!" />
                     <h2 className='my-2 w-full text-left text-4xl flex items-center justify-center font-bold dark:text-light'>Meet our Team</h2>
-                    <div className='grid w-full h-full py-12  grid-cols-2 gap-16 sm:gab-8'>
+                    <div className='grid w-full h-full py-12  grid-cols-2 gap-16 sm:gap-8  '>
                         <PersonCard img={hervpic} name={"Herve Mununu"}
                             about={" is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
                         />
