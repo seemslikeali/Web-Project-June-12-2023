@@ -37,33 +37,33 @@ const AnimateNumbers = ({ value }) => {
 }
 
 
-const PersonCard = ({ img, name, about }) => {
+const PersonCard = ({ img, name, about, github, linkedin }) => {
 
     return (
 
-        <div class="w-full col-span-1 relative    bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700">
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl' />
-            <div className="grid grid-cols-3 pb-1 xl:grid-cols-2 xl:justify-center">
+        <div class="'relative col-span-1 w-full p-4 bg-light border-solid border border-dark dark:bg-dark dark:border-light  rounded-2xl ">
+            <div className='absolute top-0 -right-3 -z-10  rounded-[2.5rem] bg-dark rounded-br-3xl' />
+            <div className="grid grid-cols-3 pb-1 xl:grid-cols-1 xl:justify-center">
                 <div className='col-span-1  flex items-center justify-center pb-2'>
                     <div className="w-40 h-40 rounded-full shadow-lg">
-                        <Image class=" w-full h-full  rounded-full shadow-lg xl:justify-center " src={img} alt='profilepic' />
+                        <Image class=" w-full h-full  rounded-full shadow-lg xl:justify-center m-auto " src={img} alt='profilepic' />
                     </div>
                 </div>
-                <div className='col-span-2 relative  h-full w-full rounded-2xl '>
+                <div className='col-span-2 relative ml-2 h-full w-full rounded-2xl '>
                     <div className='pt-4'>
                         <span class="text-sm text-gray-500 dark:text-gray-400">Co-Founder/Developer</span>
                     </div>
                     <h5 className="py-6 text-xl font-medium text-gray-900 dark:text-white">{name}</h5>
                     <p className=''> {about}</p>
                     <div className='flex items-center py-6'>
-                        <motion.a href="https://Github.com" target={"_blank"}
+                        <motion.a href={github} target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className='w-8 mx-3'
                         >
                             <GithubIcon />
                         </motion.a>
-                        <motion.a href="https://Linkedin.com" target={"_blank"}
+                        <motion.a href={linkedin} target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className='w-8 mx-3'
@@ -90,15 +90,18 @@ const About = () => {
             <TransitionEffect />
             <main className='flex w-full flex-col items-center justify-center dark:text-light'>
                 <Layout className='pt-16'>
-                    <AnimatedText className="mb-44 lg:!text-2xl sm:!text-6xl xs:!text-4xl sm:mb-8" text="Passion Fuels Purpose!" />
-                    <h2 className='my-2 w-full text-left text-4xl flex items-center justify-center font-bold dark:text-light'>Meet our Team</h2>
-                    <div className='grid w-full h-full py-12  grid-cols-2 gap-16 sm:gap-8  '>
-                        <PersonCard img={hervpic} name={"Herve Mununu"}
+                    <AnimatedText className="mb-10 lg:!text-2xl sm:!text-6xl xs:!text-4xl sm:mb-8" text="Passion Fuels Purpose!" />
+                    <h2 className='mb-10 my-2 w-full text-left text-4xl flex items-center justify-center font-bold dark:text-light'>Meet our Team</h2>
+                    <div className='grid grid-cols-2 gap-16 lg:gap-8 md:gap-y-16 md:grid-cols-1 max-w-[1290px] m-auto '>
+                        <PersonCard img={hervpic} name={"Herve Mununu"} github={"https://github.com/ginsan11"} linkedin={"https://www.linkedin.com/in/herv%C3%A9-mununu-a8aa94279/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people_connections%3BdWd3OcObSgWGNsS41YVtTw%3D%3D"}
                             about={" is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
                         />
-                        <PersonCard img={profilePic} name={"Ali Shakeel"}
+                        <PersonCard img={profilePic} name={"Ali Shakeel"} github={"https://github.com/seemslikeali"} linkedin={"https://www.linkedin.com/in/ali-shakeel-8758a4225/"}
                             about={" is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
                         />
+                    </div>
+                    <div className='grid w-full h-full py-12  grid-cols-2 gap-16 sm:gap-8 '>
+
 
                         <div className='col-span-2 pt-10 flex items-center justify-evenly xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
                             <div className='flex flex-col items-center justify-center xl:items-center'>

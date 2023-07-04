@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ali Shakeel | Home</title>
+        <title>Prairie Vistas | Home</title>
         <meta name="homepage" content="landing page for ali shakeel's website" />
       </Head>
       <TransitionEffect />
