@@ -8,13 +8,12 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 import project1 from "../../public/images/projects/ProjectImage1.jpg"
-import ImgSlider from '@/components/ImgSlider'
+import ImgSlider from '@/components/imgSlider'
 import { useState } from 'react'
 import F1 from '../../public/images/projects/F1.png'
 import K1 from '../../public/images/projects/K1.png'
 import V1 from '../../public/images/projects/V1.png'
 import R1 from '../../public/images/projects/R1.png'
-
 
 
 
