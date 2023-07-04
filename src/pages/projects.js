@@ -8,7 +8,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 import project1 from "../../public/images/projects/ProjectImage1.jpg"
-import ImgSlider from '@/components/imgSlider'
+import ImgSlider from '@/components/ImgSlider'
 import { useState } from 'react'
 import F1 from '../../public/images/projects/F1.png'
 import K1 from '../../public/images/projects/K1.png'
@@ -20,7 +20,7 @@ import R1 from '../../public/images/projects/R1.png'
 
 const FramerImage = motion(Image);
 
-const FeatureProject = ({ type, title, summary, img, link, srcset}) => {
+const FeatureProject = ({ type, title, summary, img, link, srcset }) => {
     const [trigger, setTrigger] = useState(false)
 
     return (
@@ -39,7 +39,7 @@ const FeatureProject = ({ type, title, summary, img, link, srcset}) => {
 
                 />
             </button>
-            <ImgSlider trigger={trigger} setTrigger={setTrigger} srcset = {srcset}/>
+            <ImgSlider trigger={trigger} setTrigger={setTrigger} srcset={srcset} />
 
 
             <div className='w-1/2 flex flex-col items-start justify-between pl-6 dark:text-light lg:w-full lg:pl-0 lg:pt-6'>
@@ -65,7 +65,7 @@ const FeatureProject = ({ type, title, summary, img, link, srcset}) => {
 }
 
 
-const Project = ({ title, type, img, link, srcset}) => {
+const Project = ({ title, type, img, link, srcset }) => {
     const [trigger, setTrigger] = useState(false)
 
     return (
@@ -83,7 +83,7 @@ const Project = ({ title, type, img, link, srcset}) => {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />
             </button>
-            <ImgSlider trigger={trigger} setTrigger={setTrigger} srcset = {srcset}/>
+            <ImgSlider trigger={trigger} setTrigger={setTrigger} srcset={srcset} />
 
 
             <div className='w-full flex flex-col items-start justify-between mt-4'>
@@ -111,41 +111,41 @@ const Project = ({ title, type, img, link, srcset}) => {
 
 const projects = () => {
 
-        // Set of images for project 1
-        const set4 = [
-            { src: "/images/projects/F1.png", width: 2048, height: 1365 },
-            { src: "/images/projects/F2.png", width: 2048, height: 1365 },
-            { src: "/images/projects/F3.png", width: 2048, height: 1365 },
-            { src: "/images/projects/F4.png", width: 2048, height: 1365 },
-            { src: "/images/projects/F5.png", width: 2048, height: 1365 }
-        ]
-    
-        // Set of images for project 2
-        const set3 = [
-            { src: "/images/projects/K1.png", width: 2048, height: 1365 },
-            { src: "/images/projects/K2.png", width: 2048, height: 1365 },
-            { src: "/images/projects/K3.png", width: 2048, height: 1365 },
-            { src: "/images/projects/K4.png", width: 2048, height: 1365 },
-            { src: "/images/projects/K5.png", width: 2048, height: 1365 }
-        ]
-    
-        // Set of images for project 3
-        const set2 = [
-            { src: "/images/projects/V1.png", width: 2048, height: 1365 },
-            { src: "/images/projects/V2.png", width: 2048, height: 1365 },
-            { src: "/images/projects/V3.png", width: 2048, height: 1365 },
-            { src: "/images/projects/V4.png", width: 2048, height: 1365 },
-        ]
+    // Set of images for project 1
+    const set4 = [
+        { src: "/images/projects/F1.png", width: 2048, height: 1365 },
+        { src: "/images/projects/F2.png", width: 2048, height: 1365 },
+        { src: "/images/projects/F3.png", width: 2048, height: 1365 },
+        { src: "/images/projects/F4.png", width: 2048, height: 1365 },
+        { src: "/images/projects/F5.png", width: 2048, height: 1365 }
+    ]
 
-        const set1 = [
-            { src: "/images/projects/R1.png", width: 2048, height: 1365 },
-            { src: "/images/projects/R2.png", width: 2048, height: 1365 },
-            { src: "/images/projects/R3.png", width: 2048, height: 1365 },
-            { src: "/images/projects/R4.png", width: 2048, height: 1365 },
-            { src: "/images/projects/R5.png", width: 2048, height: 1365 },
-            { src: "/images/projects/R5.png", width: 2048, height: 1365 }
-        ]
-    
+    // Set of images for project 2
+    const set3 = [
+        { src: "/images/projects/K1.png", width: 2048, height: 1365 },
+        { src: "/images/projects/K2.png", width: 2048, height: 1365 },
+        { src: "/images/projects/K3.png", width: 2048, height: 1365 },
+        { src: "/images/projects/K4.png", width: 2048, height: 1365 },
+        { src: "/images/projects/K5.png", width: 2048, height: 1365 }
+    ]
+
+    // Set of images for project 3
+    const set2 = [
+        { src: "/images/projects/V1.png", width: 2048, height: 1365 },
+        { src: "/images/projects/V2.png", width: 2048, height: 1365 },
+        { src: "/images/projects/V3.png", width: 2048, height: 1365 },
+        { src: "/images/projects/V4.png", width: 2048, height: 1365 },
+    ]
+
+    const set1 = [
+        { src: "/images/projects/R1.png", width: 2048, height: 1365 },
+        { src: "/images/projects/R2.png", width: 2048, height: 1365 },
+        { src: "/images/projects/R3.png", width: 2048, height: 1365 },
+        { src: "/images/projects/R4.png", width: 2048, height: 1365 },
+        { src: "/images/projects/R5.png", width: 2048, height: 1365 },
+        { src: "/images/projects/R5.png", width: 2048, height: 1365 }
+    ]
+
     return (
         <>
             <Head>
@@ -159,9 +159,9 @@ const projects = () => {
                     <AnimatedText text="Imagination Trumps Knowledge!"
                         className='mb-16 lg:text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl '
                     />
-                    <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
-                        <div className='col-span-12'>
-                            <FeatureProject
+                    <div className='max-w-[1000px] m-auto grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
+                        <div className='col-span-6 sm:col-span-12'>
+                            <Project
                                 title={"Réseau Santé en français de la Saskatchewan"}
                                 summary={""}
                                 img={R1}
@@ -171,9 +171,9 @@ const projects = () => {
                             />
                         </div>
 
-                        <div className='col-span-12'>
-                            <FeatureProject
-                                title={"vitalite55 SK"}
+                        <div className='col-span-6 sm:col-span-12'>
+                            <Project
+                                title={"Vitalite55 SK"}
                                 summary={""}
                                 img={V1}
                                 link="https://en.vitalite55sk.ca/"
@@ -183,7 +183,7 @@ const projects = () => {
                         </div>
 
                         <div className='col-span-6 sm:col-span-12'>
-                            <Project title={"Kabab King"}
+                            <Project title={"Kabab King Restaurant"}
                                 img={K1}
                                 link="https://www.kababking.ca/"
                                 srcset={set3}
