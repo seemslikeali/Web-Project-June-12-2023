@@ -6,12 +6,12 @@ import Link from 'next/link'
 import React, { useState } from 'react';
 import axios from 'axios';
 import { motion, useMotionValue, onMouseMove, onMouseLeave } from 'framer-motion'
-
-// images
-
 import TransitionEffect from '@/components/TransitionEffect'
 
-const contactus = () => {
+
+
+
+const ContactUs = () => {
 
     const [status, setStatus] = useState({
         submitted: false,
@@ -207,4 +207,4 @@ const contactus = () => {
     )
 }
 
-export default contactus
+export default ContactUs
