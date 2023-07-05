@@ -91,7 +91,7 @@ const articles = () => {
     return (
         <>
             <Head>
-                <title>Ali Shakeel | About Page </title>
+                <title>Prairie Vistas | Articles Page </title>
                 <meta name='description' content='about us' />
             </Head>
             <TransitionEffect />

@@ -84,7 +84,7 @@ const About = () => {
     return (
         <>
             <Head>
-                <title>Ali Shakeel | About Page </title>
+                <title>Prairie Vistas | About Page </title>
                 <meta name='description' content='about us' />
             </Head>
             <TransitionEffect />
