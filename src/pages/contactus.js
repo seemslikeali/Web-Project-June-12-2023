@@ -3,7 +3,7 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react';
 import axios from 'axios';
 import { motion, useMotionValue, onMouseMove, onMouseLeave } from 'framer-motion'
 
