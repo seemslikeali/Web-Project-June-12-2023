@@ -99,6 +99,7 @@ const contactus = () => {
                                                 Send
                                             </button>
                                         </form>
+                                        <p className='text-center pt-8'>If you don't hear from us within 2 business days please call us!</p>
                                     </div>
                                 </div>
                             </div>
