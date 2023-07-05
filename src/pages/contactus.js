@@ -195,7 +195,7 @@ const ContactUs = () => {
                                             <div className="error">Error: {status.info.msg}</div>
                                         )}
                                         {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
-                                        <p className='text-center pt-8'>If you don't hear from us within 2 business days please call us!</p>
+                                        <p className='text-center pt-8'>If you don&apos;t hear from us within 2 business days please call us!</p>
                                     </div>
                                 </div>
                             </div>
