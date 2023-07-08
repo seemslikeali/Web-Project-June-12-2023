@@ -15,6 +15,13 @@ export default function Home() {
       <Head>
         <title>Prairie Vistas | Home</title>
         <meta name="homepage" content="landing page for ali shakeel's website" />
+        <meta name="title" content="Prairie Vistas | Homepage | Taking your online presence to new heights" />
+        <meta name="description" content="Prairie Vistas, a young and flexible local business with over 9 years of experience. We're here to transform your digital landscape. " />
+        <meta name="keywords" content="saskatchewan, saskatoon, website, western, build website, french, francais, web" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta name="author" content="Ali Shakeel" />
       </Head>
       <TransitionEffect />
       <main className=" flex items-center text-dark w-full min-h-screen dark:text-light">

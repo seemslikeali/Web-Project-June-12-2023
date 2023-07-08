@@ -98,16 +98,11 @@ const NavBar = () => {
                         whileTap={{ scale: 0.9 }}>
                         <LinkedInIcon />
                     </motion.a>
-                    <motion.a href={"https:twitter.com"} target={"_blank"}
-                        className='w-6 ml-3'
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.9 }}>
-                        <YoutubeIcon />
-                    </motion.a>
+
 
                     <button
                         onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                        className={`ml-10 flex items-center justify-center rounded-full p-1
+                        className={`ml-2 flex items-center justify-center rounded-full p-1
     ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
                     >
                         {
@@ -159,16 +154,10 @@ const NavBar = () => {
                                 whileTap={{ scale: 0.9 }}>
                                 <LinkedInIcon />
                             </motion.a>
-                            <motion.a href={"https:twitter.com"} target={"_blank"}
-                                className='w-6 ml-3 sm:mx-1'
-                                whileHover={{ y: -2 }}
-                                whileTap={{ scale: 0.9 }}>
-                                <YoutubeIcon />
-                            </motion.a>
 
                             <button
                                 onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                                className={`ml-10 flex items-center justify-center rounded-full p-1
+                                className={`ml-2 flex items-center justify-center rounded-full p-1
     ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
                             >
                                 {
