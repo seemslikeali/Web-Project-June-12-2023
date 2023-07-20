@@ -2,7 +2,7 @@ import Layout from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import profilePic from "../images/developer-pic-2.PNG";
+import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import AnimatedText from '@/components/AnimatedText';
 import { LinkArrow } from '@/components/Icons';
 import HireMe from '@/components/HireMe';
