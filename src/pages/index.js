@@ -1,68 +1,108 @@
-import Layout from '@/components/Layout'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import profilePic from "../images/developer-pic-2.PNG"
-import AnimatedText from '@/components/AnimatedText'
-import { LinkArrow } from '@/components/Icons'
-import HireMe from '@/components/HireMe'
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
-import TransitionEffect from '@/components/TransitionEffect'
+import Layout from '@/components/Layout';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import profilePic from "../images/developer-pic-2.PNG";
+import AnimatedText from '@/components/AnimatedText';
+import { LinkArrow } from '@/components/Icons';
+import HireMe from '@/components/HireMe';
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+import TransitionEffect from '../components/TransitionEffect';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Prairie Vistas | Home</title>
-        <meta name="homepage" content="landing page for ali shakeel's website" />
-        <meta name="title" content="Prairie Vistas | Homepage | Taking your online presence to new heights" />
-        <meta name="description" content="Prairie Vistas, a young and flexible local business with over 9 years of experience. We're here to transform your digital landscape. " />
-        <meta name="keywords" content="saskatchewan, saskatoon, website, western, build website, french, francais, web" />
+        <title>Web Design Agency Prairie Vistas | Home</title>
+        <meta name="homepage" content="landing page for Web Design Agency Prairie Vista's website" />
+        <meta name="title" content="Web Design Prairie Vistas | Homepage | Taking your online presence to new heights" />
+        <meta name="description" content="Prairie Vistas: Transforming Your Digital Landscape with Good Website Design and Affordable Web Development. A Young and Flexible Local Business with Over 9 Years of Experience. Explore Custom Web Design in Saskatoon, Ecommerce Web Design, and Responsive Website Design Services."/>
+        <meta name="keywords" content="saskatchewan, saskatoon, website, Canadian, build website, french, francais, web, a good website design, affordable web design, agency web design, agency web development, best design for website, best web design, best website design, custom web design saskatoon, responsive design, web design agency, web designer near me, web development agency" />
         <meta name="robots" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
-        <meta name="author" content="Ali Shakeel" />
+        <html lang="en" />
+        <link rel="canonical" href="https://www.prairievistas.ca" />
+        <meta name="author" content="Prairie Vistas" />
+
+        {/*Social media meta*/} 
+        <meta property="og:title" content="Web Design Agency Prairie Vistas | Custom Web Design in Saskatoon" />
+        <meta property="og:description" content="Transform your digital landscape with Prairie Vistas, a web design agency offering affordable web development and custom web design in Saskatoon. Explore Ecommerce web design and responsive website design services." />
+        <meta property="og:image" content="https://www.example.com/path/to/your-image.jpg" />
+        <meta name="twitter:title" content="Web Design Agency Prairie Vistas | Custom Web Design in Saskatoon" />
+        <meta name="twitter:description" content="Transform your digital landscape with Prairie Vistas, a web design agency offering affordable web development and custom web design in Saskatoon. Explore Ecommerce web design and responsive website design services." />
+        <meta name="twitter:image" content="https://www.example.com/path/to/your-image.jpg" />
+
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Prairie Vistas",
+              "url": "https://www.prairievistas.ca", 
+              "sameAs": [
+                //"https://www.linkedin.com/company/prairievistas",
+                //"https://twitter.com/prairievistas",
+                //"https://www.instagram.com/prairievistas"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-306-850-1213", 
+                "contactType": "customer support"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "474 Kloppenburg St", 
+                "addressLocality": "Saskatoon", 
+                "postalCode": "S7W 0N8", 
+                "addressCountry": "CA" 
+              }
+            })
+          }}
+        />
       </Head>
       <TransitionEffect />
-      <main className=" flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Layout className='pt-0 md:pt-16 sm:pt-8'>
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
+        <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className='w-1/2 md:w-full'>
-              <Image draggable="false" src={profilePic} alt="Ali Shakeel" className='w-full h-auto lg:hidden md:inline-block md:w-full'
+            <div className="w-1/2 md:w-full">
+              <Image
+                draggable="false"
+                src={profilePic}
+                alt="Decorative image of image representing 2 company co-creators"
+                className="w-full h-auto lg:hidden md:inline-block md:w-full"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-
               />
             </div>
 
-            <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
-
-              <AnimatedText text="Weaving your imagination into practical solutions." className='!text-6xl !text-left
-              xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
-              <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
-                Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
+              <AnimatedText
+                text="Weaving your imagination into practical solutions."
+                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+              />
+              <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
+              At Prairie Vistas, we are dedicated to transforming ideas into innovative web applications. With a focus on delivering good website design, affordable web development, and responsive solutions, we create custom websites that leave a lasting impression. Let's work together to build your online presence!
               </p>
-              <div className='flex items-center self-start mt-2 lg:self-center'>
-                {/* <Link download={true} className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg 
-                font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark
-                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base' href="/dummy.pdf" target='_blank'
+              <div className="flex items-center self-start mt-2 lg:self-center">
+                <Link
+                  href={"/contactus"}
+                  className="text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
                 >
-                  Resume <LinkArrow className={"w-6 ml-1.5"}></LinkArrow>
-                </Link> */}
-                <Link href={"/contactus"}
-                  className='text-lg font-medium capitalize text-dark underline dark:text-light md:text-base'
-                >Contact us</Link>
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
         </Layout>
 
         <HireMe />
-        <div className='absolute right-8 bottom-8 inline-block w-24 md:hidden'>
-          <Image src={lightBulb} alt='Ali Shakeel' className='w-full h-auto' />
+        <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
+          <Image src={lightBulb} alt="decorative lightbulb image" className="w-full h-auto" />
         </div>
       </main>
     </>
-  )
+  );
 }
