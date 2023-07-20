@@ -157,7 +157,7 @@ const ContactUs = () => {
                                                     placeholder="Name"
 
                                                     id="name"
-                                                    type="text"
+                                                    type="name"
                                                     name="name"
                                                     onChange={handleOnChange}
                                                     required
@@ -175,7 +175,7 @@ const ContactUs = () => {
                                                     placeholder="Email address"
 
                                                     id="email"
-                                                    type="text"
+                                                    type="email"
                                                     name="_replyto"
                                                     onChange={handleOnChange}
                                                     required
@@ -193,7 +193,7 @@ const ContactUs = () => {
                                                     rows="3" placeholder="Your message"
 
                                                     id="message"
-                                                    name="text"
+                                                    name="message"
                                                     onChange={handleOnChange}
                                                     required
                                                     value={inputs.message}
