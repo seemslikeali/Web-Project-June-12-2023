@@ -83,6 +83,7 @@ const ContactUs = () => {
                 <meta name="robots" content="index, follow" />
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                 <meta name="language" content="English" />
+                <link rel="canonical" href="https://www.prairievistas.ca/contactus" />
                 <meta name="author" content="Prairie Vistas" />
 
                 {/*Social media meta*/} 

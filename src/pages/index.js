@@ -21,6 +21,8 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
+        <html lang="en" />
+        <link rel="canonical" href="https://www.prairievistas.ca" />
         <meta name="author" content="Prairie Vistas" />
 
         {/*Social media meta*/}
@@ -33,7 +35,38 @@ export default function Home() {
 
 
         {/*Schema markup*/}
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Prairie Vistas",
+              "url": "https://www.prairievistas.ca",
+              "sameAs": [
+                //"https://www.linkedin.com/company/prairievistas",
+                //"https://twitter.com/prairievistas",
+                //"https://www.instagram.com/prairievistas"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-306-850-1213",
+                "contactType": "customer support"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "474 Kloppenburg St",
+                "addressLocality": "Saskatoon",
+                "postalCode": "S7W 0N8",
+                "addressCountry": "CA"
+              },
+              "email": "info@prairievistas.ca",
+              "description": "Prairie Vistas: Transforming Your Digital Landscape with Good Website Design and Affordable Web Development. Custom and Responsive Web Design with A Young and Flexible Local Business with Over 9 Years of Experience.",
+              "logo": "https://www.prairievistas.ca/logo.png", // Replace with your logo URL
+              "taxID": "Unavailable"
+            })
+          }}
+        />
       </Head>
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
