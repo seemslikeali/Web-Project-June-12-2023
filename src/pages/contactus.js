@@ -74,8 +74,28 @@ const ContactUs = () => {
     return (
         <>
             <Head>
-                <title>Ali Shakeel | Contact Page </title>
+            <title>Contact Us | Prairie Vistas Web Design Agency</title>
                 <meta name='description' content='about us' />
+                
+                <meta name="title" content="Web Design Prairie Vistas | Homepage | Taking your online presence to new heights" />
+                <meta name="description" content="Prairie Vistas: Transforming Your Digital Landscape with Good Website Design and Affordable Web Development. Custom and Responsive Web Design with A Young and Flexible Local Business with Over 9 Years of Experience."/>
+                <meta name="keywords" content="saskatchewan, saskatoon, website, Canadian, build website, french, francais, web, a good website design, affordable web design, agency web design, agency web development, best design for website, best web design, best website design, custom web design saskatoon, responsive design, web design agency, web designer near me, web development agency" />
+                <meta name="robots" content="index, follow" />
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta name="language" content="English" />
+                <html lang="en" />
+                <link rel="canonical" href="https://www.prairievistas.ca" />
+                <meta name="author" content="Prairie Vistas" />
+
+                {/*Social media meta*/} 
+                <meta property="og:title" content="Web Design Agency Prairie Vistas | Custom Web Design in Saskatoon" />
+                <meta property="og:description" content="Transform your digital landscape with Prairie Vistas, a web design agency offering affordable web development and custom web design in Saskatoon. Explore Ecommerce web design and responsive website design services." />
+                <meta property="og:image" content="https://www.example.com/path/to/your-image.jpg" />
+                <meta name="twitter:title" content="Web Design Agency Prairie Vistas | Custom Web Design in Saskatoon" />
+                <meta name="twitter:description" content="Transform your digital landscape with Prairie Vistas, a web design agency offering affordable web development and custom web design in Saskatoon. Explore Ecommerce web design and responsive website design services." />
+                <meta name="twitter:image" content="https://www.example.com/path/to/your-image.jpg" />
+
+                {/*Schema markup*/} 
 
             </Head>
             <TransitionEffect />
@@ -87,7 +107,9 @@ const ContactUs = () => {
 
                         <section class="mb-32">
                             <div
-                                class="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('https://images.unsplash.com/photo-1593291600904-660bbd59a758?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')]">
+                                class="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('https://images.unsplash.com/photo-1593291600904-660bbd59a758?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')]"
+                                alt="Prairie landscape with web design elements">
+                                
                             </div>
                             <div class="container px-6 mdl:px-12">
                                 <div
@@ -135,7 +157,7 @@ const ContactUs = () => {
                                                     placeholder="Name"
 
                                                     id="name"
-                                                    type="name"
+                                                    type="text"
                                                     name="name"
                                                     onChange={handleOnChange}
                                                     required
@@ -153,7 +175,7 @@ const ContactUs = () => {
                                                     placeholder="Email address"
 
                                                     id="email"
-                                                    type="email"
+                                                    type="text"
                                                     name="_replyto"
                                                     onChange={handleOnChange}
                                                     required
@@ -171,7 +193,7 @@ const ContactUs = () => {
                                                     rows="3" placeholder="Your message"
 
                                                     id="message"
-                                                    name="message"
+                                                    name="text"
                                                     onChange={handleOnChange}
                                                     required
                                                     value={inputs.message}
@@ -186,8 +208,8 @@ const ContactUs = () => {
                                                 {!status.submitting
                                                     ? !status.submitted
                                                         ? 'Submit'
-                                                        : 'Submitted'
-                                                    : 'Submitting...'}
+                                                        : 'Message Sent! Thank you for reaching out.'
+                                                    : 'Sending...'}
 
                                             </button>
                                         </form>

@@ -86,6 +86,44 @@ const About = () => {
             <Head>
                 <title>Prairie Vistas | About Page </title>
                 <meta name='description' content='about us' />
+
+                {/*Social media meta*/} 
+
+        {/*Schema markup*/} 
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Prairie Vistas",
+              "url": "https://www.prairievistas.ca", 
+              "sameAs": [
+                //"https://www.linkedin.com/company/prairievistas",
+                //"https://twitter.com/prairievistas",
+                //"https://www.instagram.com/prairievistas"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-306-850-1213", 
+                "contactType": "customer support"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "474 Kloppenburg St", 
+                "addressLocality": "Saskatoon", 
+                "postalCode": "S7W 0N8", 
+                "addressCountry": "CA" 
+              },
+              "email": "info@prairievistas.ca",
+              "description": "Get in touch with Prairie Vistas Web Design Agency for custom web design, affordable web development, and responsive website design services in Saskatchewan, Canada.",
+              "logo": "https://www.prairievistas.ca/logo.png", // Replace with your logo URL
+              "taxID": "Unavailable"
+            })
+          }}
+        />
+
+
             </Head>
             <TransitionEffect />
             <main className='flex w-full flex-col items-center justify-center dark:text-light'>

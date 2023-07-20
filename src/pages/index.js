@@ -16,7 +16,7 @@ export default function Home() {
         <title>Web Design Agency Prairie Vistas | Home</title>
         <meta name="homepage" content="landing page for Web Design Agency Prairie Vista's website" />
         <meta name="title" content="Web Design Prairie Vistas | Homepage | Taking your online presence to new heights" />
-        <meta name="description" content="Prairie Vistas: Transforming Your Digital Landscape with Good Website Design and Affordable Web Development. A Young and Flexible Local Business with Over 9 Years of Experience. Explore Custom Web Design in Saskatoon, Ecommerce Web Design, and Responsive Website Design Services."/>
+        <meta name="description" content="Prairie Vistas: Transforming Your Digital Landscape with Good Website Design and Affordable Web Development. Custom and Responsive Web Design with A Young and Flexible Local Business with Over 9 Years of Experience."/>
         <meta name="keywords" content="saskatchewan, saskatoon, website, Canadian, build website, french, francais, web, a good website design, affordable web design, agency web design, agency web development, best design for website, best web design, best website design, custom web design saskatoon, responsive design, web design agency, web designer near me, web development agency" />
         <meta name="robots" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,6 +34,7 @@ export default function Home() {
         <meta name="twitter:image" content="https://www.example.com/path/to/your-image.jpg" />
 
 
+        {/*Schema markup*/} 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -58,7 +59,11 @@ export default function Home() {
                 "addressLocality": "Saskatoon", 
                 "postalCode": "S7W 0N8", 
                 "addressCountry": "CA" 
-              }
+              },
+              "email": "info@prairievistas.ca",
+              "description": "Prairie Vistas: Transforming Your Digital Landscape with Good Website Design and Affordable Web Development. Custom and Responsive Web Design with A Young and Flexible Local Business with Over 9 Years of Experience.",
+              "logo": "https://www.prairievistas.ca/logo.png", // Replace with your logo URL
+              "taxID": "Unavailable"
             })
           }}
         />
