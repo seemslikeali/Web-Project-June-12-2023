@@ -16,7 +16,7 @@ export default function Home() {
         <title>Web Design Agency Prairie Vistas | Home</title>
         <meta name="homepage" content="landing page for Web Design Agency Prairie Vista's website" />
         <meta name="title" content="Web Design Prairie Vistas | Homepage | Taking your online presence to new heights" />
-        <meta name="description" content="Prairie Vistas: Transforming Your Digital Landscape with Good Website Design and Affordable Web Development. Custom and Responsive Web Design with A Young and Flexible Local Business with Over 9 Years of Experience."/>
+        <meta name="description" content="Prairie Vistas: Transforming Your Digital Landscape with Good Website Design and Affordable Web Development. Custom and Responsive Web Design with A Young and Flexible Local Business with Over 9 Years of Experience." />
         <meta name="keywords" content="saskatchewan, saskatoon, website, Canadian, build website, french, francais, web, a good website design, affordable web design, agency web design, agency web development, best design for website, best web design, best website design, custom web design saskatoon, responsive design, web design agency, web designer near me, web development agency" />
         <meta name="robots" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -25,7 +25,7 @@ export default function Home() {
         <link rel="canonical" href="https://www.prairievistas.ca" />
         <meta name="author" content="Prairie Vistas" />
 
-        {/*Social media meta*/} 
+        {/*Social media meta*/}
         <meta property="og:title" content="Web Design Agency Prairie Vistas | Custom Web Design in Saskatoon" />
         <meta property="og:description" content="Transform your digital landscape with Prairie Vistas, a web design agency offering affordable web development and custom web design in Saskatoon. Explore Ecommerce web design and responsive website design services." />
         <meta property="og:image" content="https://www.example.com/path/to/your-image.jpg" />
@@ -34,7 +34,7 @@ export default function Home() {
         <meta name="twitter:image" content="https://www.example.com/path/to/your-image.jpg" />
 
 
-        {/*Schema markup*/} 
+        {/*Schema markup*/}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -42,7 +42,7 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Prairie Vistas",
-              "url": "https://www.prairievistas.ca", 
+              "url": "https://www.prairievistas.ca",
               "sameAs": [
                 //"https://www.linkedin.com/company/prairievistas",
                 //"https://twitter.com/prairievistas",
@@ -50,15 +50,15 @@ export default function Home() {
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+1-306-850-1213", 
+                "telephone": "+1-306-850-1213",
                 "contactType": "customer support"
               },
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "474 Kloppenburg St", 
-                "addressLocality": "Saskatoon", 
-                "postalCode": "S7W 0N8", 
-                "addressCountry": "CA" 
+                "streetAddress": "474 Kloppenburg St",
+                "addressLocality": "Saskatoon",
+                "postalCode": "S7W 0N8",
+                "addressCountry": "CA"
               },
               "email": "info@prairievistas.ca",
               "description": "Prairie Vistas: Transforming Your Digital Landscape with Good Website Design and Affordable Web Development. Custom and Responsive Web Design with A Young and Flexible Local Business with Over 9 Years of Experience.",
@@ -89,7 +89,7 @@ export default function Home() {
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-              At Prairie Vistas, we are dedicated to transforming ideas into innovative web applications. With a focus on delivering good website design, affordable web development, and responsive solutions, we create custom websites that leave a lasting impression. Let's work together to build your online presence!
+                At Prairie Vistas, we are dedicated to transforming ideas into innovative web applications. With a focus on delivering good website design, affordable web development, and responsive solutions, we create custom websites that leave a lasting impression. Let&apos;s work together to build your online presence!
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
