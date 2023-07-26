@@ -72,34 +72,44 @@ export default function Home() {
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
-              <Image
+              <video width="100%" height="auto" autoPlay loop muted playsInline>
+                <source
+                  src="/images/video/HomePageWheatAnimationSafariVersion.mp4"
+                  type='video/mp4; codecs="hvc1"'/>
+                <source
+                  src={'/images/video/HomePageWheatAnimationChromeVersion.webm'}
+                  type="video/webm"/>
+              </video>
+
+
+                  {/**<Image
                 draggable="false"
                 src={profilePic}
                 alt="Decorative image of image representing 2 company co-creators"
                 className="w-full h-auto lg:hidden md:inline-block md:w-full"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-              />
-            </div>
+        />  **/}
+                </div>
 
-            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
-              <AnimatedText
-                text="Weaving your imagination into practical solutions."
-                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
-              />
-              <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                At Prairie Vistas, we are dedicated to transforming ideas into innovative web applications. With a focus on delivering good website design, affordable web development, and responsive solutions, we create custom websites that leave a lasting impression. Let&apos;s work together to build your online presence!
-              </p>
-              <div className="flex items-center self-start mt-2 lg:self-center">
-                <Link
-                  href={"/contactus"}
-                  className="text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
-                >
-                  Contact us
-                </Link>
-              </div>
+                <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
+                  <AnimatedText
+                    text="Weaving your imagination into practical solutions."
+                    className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+                  />
+                  <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
+                    At Prairie Vistas, we are dedicated to transforming ideas into innovative web applications. With a focus on delivering good website design, affordable web development, and responsive solutions, we create custom websites that leave a lasting impression. Let&apos;s work together to build your online presence!
+                  </p>
+                  <div className="flex items-center self-start mt-2 lg:self-center">
+                    <Link
+                      href={"/contactus"}
+                      className="text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
+                    >
+                      Contact us
+                    </Link>
+                  </div>
+                </div>
             </div>
-          </div>
         </Layout>
 
         <HireMe />
