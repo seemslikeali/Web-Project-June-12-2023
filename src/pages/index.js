@@ -59,7 +59,7 @@ export default function Home() {
                 "postalCode": "S7W 0N8",
                 "addressCountry": "CA"
               },
-              "email": "info@prairievistas.ca",
+              "email": "PrairieVistasWebDesign@gmail.com",
               "description": "Prairie Vistas: Transforming Your Digital Landscape with Good Website Design and Affordable Web Development. Custom and Responsive Web Design with A Young and Flexible Local Business with Over 9 Years of Experience.",
               "logo": "https://www.prairievistas.ca/logo.png", // Replace with your logo URL
               "taxID": "Unavailable"
@@ -98,7 +98,7 @@ export default function Home() {
                     className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
                   />
                   <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                    At Prairie Vistas, we are dedicated to transforming ideas into innovative web applications. With a focus on delivering good website design, affordable web development, and responsive solutions, we create custom websites that leave a lasting impression. Let&apos;s work together to build your online presence!
+                    At Prairie Vistas, we have a focus on delivering outstanding website design, affordable web development, and responsive solutions, we create custom websites that leave a lasting impression. Let&apos;s work together to build your online presence!
                   </p>
                   <div className="flex items-center self-start mt-2 lg:self-center">
                     <Link
