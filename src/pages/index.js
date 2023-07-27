@@ -75,14 +75,14 @@ export default function Home() {
               className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0, 0%, 11%,0.15)] bg-fixed">
               <div className="flex h-full items-center justify-center">
                 <div className="px-6 text-center text-white md:px-12">
-                  <h1 className="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
-                    The best offer on the market <br /><span>for your business</span>
-                  </h1>
-                  <button type="button"
-                    class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
-                    data-te-ripple-init data-te-ripple-color="light">
-                    Get started
-                  </button>
+
+                  <AnimatedText text="Discover Your Virtual Potential"
+                    className='text-white mb-16 lg:text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl '
+                  />
+                  <h2 className='mb-10 my-2 m-auto text-l flex items-center justify-center text-center font-bold w-3/5 dark:text-light'>
+                    At Prairie Vistas, we are dedicated to transforming ideas into innovative web applications. With a focus on delivering good website design, affordable web development, and responsive solutions, we create custom websites that leave a lasting impression. Let&apos;s work together to build your online presence!
+                  </h2>
+
                 </div>
               </div>
             </div>
