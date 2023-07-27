@@ -9,6 +9,7 @@ function formatDate(date) {
   const pages = [
     { url: '/', changefreq: 'weekly', priority: '1.0' },
     { url: '/about', changefreq: 'weekly', priority: '0.9' },
+    { url: '/projects', changefreq: 'monthly', priority: '0.9' },
     //{ url: '/services', changefreq: 'weekly', priority: '0.9' },
     { url: '/contactus', changefreq: 'weekly', priority: '0.7' },
     // Add more URLs of your website's pages here
