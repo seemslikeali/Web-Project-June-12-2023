@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        innerDark: 'inset 0 0 52em 15em #1b1b1b',
-        innerLight: 'inset 0 0 12em 10em #F5F5F5, inset 0px 35px 35px 0px #F5F5F5'
+        innerDark: 'inset 0 0 52em 5em #1b1b1b',
+        innerLight: 'inset 0 0 12em 5em #F5F5F5, inset 0px 35px 35px 0px #F5F5F5'
 
       },
       fontFamily: {
