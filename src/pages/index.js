@@ -68,53 +68,36 @@ export default function Home() {
         />
       </Head>
       <TransitionEffect />
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Layout className="pt-0 md:pt-16 sm:pt-8">
-          <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-full">
-              <video width="100%" height="auto" autoPlay loop muted playsInline>
-                <source
-                  src="/images/video/HomePageWheatAnimationSafariVersion.mp4"
-                  type='video/mp4; codecs="hvc1"'/>
-                <source
-                  src={'/images/video/HomePageWheatAnimationChromeVersion.webm'}
-                  type="video/webm"/>
-              </video>
-
-
-                  {/**<Image
-                draggable="false"
-                src={profilePic}
-                alt="Decorative image of image representing 2 company co-creators"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full"
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-        />  **/}
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light ">
+        <Layout className="w-full min-h-screen flex h-screen !p-0">
+          <div className="relative overflow-hidden bg-cover bg-no-repeat flex-1 bg-homePageCover bg-center shadow-innerLight dark:shadow-innerDark backdrop-blur-md ">
+            <div
+              className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0, 0%, 11%,0.15)] bg-fixed">
+              <div className="flex h-full items-center justify-center">
+                <div className="px-6 text-center text-white md:px-12">
+                  <h1 className="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+                    The best offer on the market <br /><span>for your business</span>
+                  </h1>
+                  <button type="button"
+                    class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    Get started
+                  </button>
                 </div>
-
-                <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
-                  <AnimatedText
-                    text="Weaving your imagination into practical solutions."
-                    className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
-                  />
-                  <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                    At Prairie Vistas, we are dedicated to transforming ideas into innovative web applications. With a focus on delivering good website design, affordable web development, and responsive solutions, we create custom websites that leave a lasting impression. Let&apos;s work together to build your online presence!
-                  </p>
-                  <div className="flex items-center self-start mt-2 lg:self-center">
-                    <Link
-                      href={"/contactus"}
-                      className="text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
-                    >
-                      Contact us
-                    </Link>
-                  </div>
-                </div>
+              </div>
             </div>
+          </div>
         </Layout>
+
+
+
+
+
+
 
         <HireMe />
         <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
-          <Image src={lightBulb} alt="decorative lightbulb image" className="w-full h-auto" />
+          {/* <Image src={lightBulb} alt="decorative lightbulb image" className="w-full h-auto" /> */}
         </div>
       </main>
     </>

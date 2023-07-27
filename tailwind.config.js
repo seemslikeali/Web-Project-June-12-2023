@@ -7,6 +7,11 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      boxShadow: {
+        innerDark: 'inset 0 0 52em 15em #1b1b1b',
+        innerLight: 'inset 0 0 12em 10em #F5F5F5, inset 0px 35px 35px 0px #F5F5F5'
+
+      },
       fontFamily: {
         mont: ['var(--font-mont)', ...fontFamily.sans],
         mono: ['var(--font-roboto-mono)'],
@@ -44,6 +49,9 @@ module.exports = {
 
         circularDarkSm:
           "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 40px)",
+
+        homePageCover:
+          "url('../../public/images/backgrounds/homepageIMG.png')",
       },
     },
     screens: {
