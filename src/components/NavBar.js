@@ -58,7 +58,7 @@ const NavBar = () => {
             className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8'>
 
 
-            <button className='flex-col justify-center items-center hidden lg:flex' onClick={handleClick}>
+            <button className='flex-col justify-center items-center hidden lg:flex' onClick={handleClick} name='button for sandwich menu'>
                 <span className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm -translate-y-0.5 ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
                 <span className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
                 <span className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm translate-y-0.5 ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
@@ -86,12 +86,7 @@ const NavBar = () => {
                     >
                         <TwitterIcon />
                     </motion.a>
-                    <motion.a href={"https:twitter.com"} target={"_blank"}
-                        className='w-6 mx-3'
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.9 }}>
-                        <GithubIcon />
-                    </motion.a>
+
                     <motion.a href={"https:twitter.com"} target={"_blank"}
                         className='w-6 mx-3'
                         whileHover={{ y: -2 }}
@@ -142,12 +137,8 @@ const NavBar = () => {
                             >
                                 <TwitterIcon />
                             </motion.a>
-                            <motion.a href={"https:twitter.com"} target={"_blank"}
-                                className='w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark'
-                                whileHover={{ y: -2 }}
-                                whileTap={{ scale: 0.9 }}>
-                                <GithubIcon />
-                            </motion.a>
+
+
                             <motion.a href={"https:twitter.com"} target={"_blank"}
                                 className='w-6 mx-3 sm:mx-1'
                                 whileHover={{ y: -2 }}
@@ -178,7 +169,7 @@ const NavBar = () => {
             <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
                 <Logo />
             </div>
-        </header>
+        </header >
     )
 }
 
