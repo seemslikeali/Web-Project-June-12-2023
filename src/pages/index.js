@@ -79,7 +79,7 @@ export default function Home() {
                   <AnimatedText text="Discover Your Virtual Potential"
                     className='text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mb-16 lg:text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl '
                   />
-                  <h2 className='pb-16 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mb-10 my-2 m-auto text-2xl flex items-center justify-center text-center font-bold w-3/5 2xl:w-[95%] dark:text-light'>
+                  <h2 className='pb-16 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mb-10 my-2 m-auto text-2xl xl:!text-lg lg:text-sm flex items-center justify-center text-center font-bold w-3/5 2xl:w-[95%] dark:text-light'>
                     At Prairie Vistas, we are dedicated to transforming ideas into innovative web applications. With a focus on delivering good website design, affordable web development, and responsive solutions, we create custom websites that leave a lasting impression. Let&apos;s work together to build your online presence!
                   </h2>
 
