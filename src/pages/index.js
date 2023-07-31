@@ -1,12 +1,7 @@
 import Layout from '@/components/Layout';
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import profilePic from "../../public/images/profile/HomePagePicutureOfBothDevs.png";
 import AnimatedText from '@/components/AnimatedText';
-import { LinkArrow } from '@/components/Icons';
 import HireMe from '@/components/HireMe';
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from '../components/TransitionEffect';
 
 export default function Home() {
@@ -68,30 +63,41 @@ export default function Home() {
         />
       </Head>
       <TransitionEffect />
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light ">
+      <main className=" items-center text-dark w-full min-h-screen dark:text-light ">
         <Layout className="w-full min-h-screen flex h-screen !p-0">
-          <div className="relative overflow-hidden bg-cover bg-no-repeat flex-1 bg-homePageCover bg-center shadow-innerLight dark:shadow-innerDark backdrop-blur-md ">
-            <div
-              className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0, 0%, 11%,0.15)] bg-fixed">
-              <div className="flex h-full items-center justify-center">
-                <div className="px-6 text-center text-white md:px-12">
 
-                  <AnimatedText text="Discover Your Virtual Potential"
-                    className='text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mb-16 lg:text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl '
-                  />
-                  <h2 className='pb-16 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mb-10 my-2 m-auto text-2xl xl:!text-lg lg:text-sm flex items-center justify-center text-center font-bold w-3/5 2xl:w-[95%] dark:text-light'>
-                    At Prairie Vistas, we are dedicated to transforming ideas into innovative web applications. With a focus on delivering good website design, affordable web development, and responsive solutions, we create custom websites that leave a lasting impression. Let&apos;s work together to build your online presence!
-                  </h2>
 
-                </div>
-              </div>
+          <div class="grid parent w-full h-screen">
+            <div class="below bg-green-600 bg-opacity-50 row-start-1 col-start-1">
+              <video autoPlay loop muted class="top-0 left-0 w-full h-full object-cover bg-no-repeat">
+                <source src="video/bgVideo.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="flex flex-col justify-center items-center overflow-hidden bg-cover bg-no-repeat bg-center shadow-innerLight dark:shadow-innerDark row-start-1 col-start-1">
+              <AnimatedText
+                text="Discover Your Virtual Potential"
+                className='text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]  mb-10 lg:text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'
+              />
+              <h2 class='pb-16 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mb-40 my-2 text-2xl xl:!text-lg lg:text-sm text-center font-bold w-3/5 2xl:w-[95%] text-light dark:text-light'>
+                At Prairie Vistas, we are dedicated to transforming ideas into innovative web applications. With a focus on delivering good website design, affordable web development, and responsive solutions, we create custom websites that leave a lasting impression. Let&apos;s work together to build your online presence!
+              </h2>
             </div>
           </div>
+
         </Layout>
+        <div className='w-full h-screen bg-gradient-to-r from-teal-200 to-teal-500'>
+
+          <div class="grid w-full h-screen justify-center items-center  shadow-innerLight dark:shadow-innerDark ">
+
+            {/* placeholder */}
+            <img className='flex flex-col !p-0 !m-0 justify-center items-center' src="https://buildingbeaverz.com/img/brown_beaver.gif" alt="Beaver Carrot GIF" />
+
+          </div>
+
+        </div>
 
         <HireMe />
         <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
-          {/* <Image src={lightBulb} alt="decorative lightbulb image" className="w-full h-auto" /> */}
         </div>
       </main>
     </>

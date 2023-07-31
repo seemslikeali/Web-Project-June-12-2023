@@ -12,6 +12,7 @@ module.exports = {
         innerLight: 'inset 0 0 10em 5em #F5F5F5, inset 0px 22px 30px 0px #F5F5F5'
 
       },
+
       fontFamily: {
         mont: ['var(--font-mont)', ...fontFamily.sans],
         mono: ['var(--font-roboto-mono)'],
@@ -52,6 +53,13 @@ module.exports = {
 
         homePageCover:
           "url('../../public/images/backgrounds/homepageIMG.jpg')",
+        'aurora-purple': 'linear-gradient(to right, #AB47BC, #4A148C, #311B92)',
+        'aurora-blue': 'linear-gradient(to right,  #0D47A1, #0277BD, #26C6DA)',
+        'aurora-green': 'linear-gradient(to right, #00FF00, #32CD32,  #008080 )',
+        'aurora-gradient': 'linear-gradient(to right, rgba(171, 71, 188, 1), rgba(74, 20, 140, 1), rgba(49, 27, 146, 1), rgba(13, 71, 161, 1))',
+
+
+
       },
     },
     screens: {
