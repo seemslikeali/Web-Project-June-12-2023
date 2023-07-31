@@ -68,8 +68,8 @@ export default function Home() {
 
 
           <div class="grid parent w-full h-screen">
-            <div class="below select-none bg-green-600 bg-opacity-50 row-start-1 col-start-1" unselectable="on" pointer-events="false" >
-              <video autoPlay loop muted webkit-playsinline playsinline class="select-none top-0 left-0 w-full h-full object-cover bg-no-repeat">
+            <div class="below select-none bg-green-600 bg-opacity-50 row-start-1 col-start-1" unselectable="on" pointer-events="none">
+              <video autoplay autoPlay loop muted playsinline class="select-none top-0 left-0 w-full h-full object-cover bg-no-repeat">
                 <source src="video/bgVideo.mp4" type="video/mp4" />
               </video>
             </div>
