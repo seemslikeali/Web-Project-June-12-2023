@@ -69,7 +69,7 @@ export default function Home() {
 
           <div class="grid parent w-full h-screen">
             <div class="below select-none bg-green-600 bg-opacity-50 row-start-1 col-start-1" unselectable="on" pointer-events="none">
-              <video autoplay loop muted playsinline webkit-playsinline controls="false" poster="path/to/poster-image.jpg" class="select-none top-0 left-0 w-full h-full object-cover bg-no-repeat">
+              <video autoplay loop muted playsinline webkit-playsinline controls="false" class="select-none top-0 left-0 w-full h-full object-cover bg-no-repeat">
                 <source src="video/bgVideo.mp4" type="video/mp4" />
               </video>
             </div>
