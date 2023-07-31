@@ -69,7 +69,7 @@ export default function Home() {
 
           <div class="grid parent w-full h-screen">
             <div class="below bg-green-600 bg-opacity-50 row-start-1 col-start-1">
-              <video autoPlay loop muted controls webkit-playsinline playsinline class="top-0 left-0 w-full h-full object-cover bg-no-repeat">
+              <video autoPlay loop muted webkit-playsinline playsinline class="top-0 left-0 w-full h-full object-cover bg-no-repeat">
                 <source src="video/bgVideo.mp4" type="video/mp4" />
               </video>
             </div>
