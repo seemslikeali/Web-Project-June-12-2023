@@ -67,7 +67,7 @@ export default function Home() {
         <Layout className="w-full min-h-screen flex h-screen !p-0">
 
 
-          <div class="grid parent w-full h-screen">
+          <div class="parent grid w-full h-screen">
             <div class="below bg-green-600 bg-opacity-50 row-start-1 col-start-1">
               <video autoPlay loop muted class="top-0 left-0 w-full h-full object-cover bg-no-repeat">
                 <source src="video/bgVideo.mp4" type="video/mp4" />
