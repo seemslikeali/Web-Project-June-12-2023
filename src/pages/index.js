@@ -90,7 +90,7 @@ export default function Home() {
           <div class="grid w-full h-screen justify-center items-center  shadow-innerLight dark:shadow-innerDark ">
 
             {/* placeholder */}
-            <img className='flex flex-col !p-0 !m-0 justify-center items-center' src="https://buildingbeaverz.com/img/brown_beaver.gif" alt="Beaver Carrot GIF" />
+            <p>Site under construction</p>
 
           </div>
 
